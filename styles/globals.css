@@ -33,3 +33,11 @@ body {
   }
 }
 
+*::-webkit-scrollbar {
+  background-color: white;
+  width: 2px;
+}
+*::-webkit-scrollbar-thumb{
+  background-color: #bf0000;
+}
+

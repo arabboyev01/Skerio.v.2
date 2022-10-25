@@ -1,3 +1,8 @@
+
+export interface navbarTypes {
+    name: string,
+    link: string,
+}
 export interface scheduleTypes {
     firstClubLogo: any,
     secondClubLogo: any,

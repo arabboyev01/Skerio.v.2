@@ -3,9 +3,9 @@ import {makeStyles} from "@material-ui/core";
 export default makeStyles((theme) => ({
     storeWrapper: {
         height: "auto",
-        marginTop: "106px",
+        marginTop: "60px",
         [theme.breakpoints.down('sm')]: {
-            marginTop: "80px",
+            marginTop: "50px",
         },
     },
     swiper: {

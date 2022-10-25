@@ -22,13 +22,15 @@ export default function Navbar(){
             <Typography className={classes.logo}> Skerio.</Typography>
             <Box className={!openNavbar ? classes.mainBlock : classes.activeNavbar}>
                 {data.map(item =>
-                  <Typography className={classes.singleName} key={item.name}>{item.name}</Typography>
+                    <Link href={item.link}>
+                     <Typography className={classes.singleName} key={item.name}>{item.name}</Typography>
+                    </Link>
                 )}
                 <Box className={classes.dropDown}>
                     <FormControl fullWidth>
                         <NativeSelect defaultValue={30} style={openNavbar ? { color: "white" } : {color: "black"}}>
                             {sports.map(item =>
-                                <option value={10} key={item.name}>{item.name}</option>
+                                 <option value={10} key={item.name}>{item.name}</option>
                             )}
                         </NativeSelect>
                     </FormControl>

@@ -2,8 +2,6 @@ import {makeStyles} from "@material-ui/core";
 
 export default makeStyles((theme) => ({
     navbarWrapper: {
-        maxWidth: "1250px",
-        margin: "0 auto",
         padding: "25px 0",
         display: "flex",
         flexDirection: "row",
@@ -55,6 +53,7 @@ export default makeStyles((theme) => ({
         fontSize: "18px",
         lineHeight: "22px",
         paddingRight: "30px",
+        cursor: "pointer",
         [theme.breakpoints.down('sm')]: {
             paddingRight: "0",
             paddingTop: "30px",

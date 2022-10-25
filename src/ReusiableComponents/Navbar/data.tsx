@@ -1,19 +1,24 @@
-
-export const data = [
+import {navbarTypes} from "../../../types/schedule.types";
+export const data: navbarTypes[] = [
     {
         name: "Home",
+        link: "/",
     },
     {
         name: "Shop",
+        link: "/shop",
     },
     {
         name: "News",
+        link: "/shop",
     },
     {
         name: "Table",
+        link: "/shop",
     },
     {
         name: "Area",
+        link: "/shop",
     },
 ]
 export const sports = [
