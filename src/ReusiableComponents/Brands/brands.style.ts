@@ -18,16 +18,21 @@ export default makeStyles((theme) => ({
         width: "100%",
         margin: "50px 0",
         position: "absolute",
-        animation: "marquee 20s linear infinite",
-        '$:hover': {
+        animation: "marquee 30s linear infinite",
+        '&:hover': {
             animationPlayState: "paused",
         },
     },
     orb: {
-
+        width: "200px",
+        height: "200px",
+        display: "inline-block",
+        margin: "0 5px",
+        float: "left",
+        transition: "all 0.3s ease-out",
     },
     brandName: {
-        objectFit: "contain",
+        objectFit: "scale-down",
     },
     span: {
         float: "left",

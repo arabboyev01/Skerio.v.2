@@ -37,9 +37,10 @@ export default makeStyles((theme) => ({
         display: "flex",
         flexDirection: "column",
         alignItems: "start",
-        maxHeight: "440px",
+        maxHeight: "360px",
         overflowY: "auto",
         cursor: "pointer",
+        borderLeft: ".2px solid rgba(0, 0, 0, 0.5)",
     },
     playerImage: {
         objectFit: "contain"
@@ -53,10 +54,10 @@ export default makeStyles((theme) => ({
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "space-between",
-        padding: "0 10px",
+        padding: "10px",
         borderBottom: ".2px solid rgba(0, 0, 0, 0.5)",
-        paddingBottom: "5px",
-        borderRadius: "0",
+        paddingBottom: "0",
+        maxHeight: "110px",
     },
     activePlayer: {
         width: "100%",
@@ -64,22 +65,27 @@ export default makeStyles((theme) => ({
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "space-between",
-        padding: "0 10px",
+        padding: "10px",
         paddingBottom: "5px",
         background: "#F4F4F4",
         color: "#BF0000",
-        borderRadius: "5px",
+        maxHeight: "110px",
+        borderBottom: ".2px solid rgba(0, 0, 0, 0.5)",
     },
     playerName:{
         maxWidth: "253px",
-        fontWeight: 700,
-        fontSize: "24px",
-        lineHeight: "29px",
+        fontWeight: 500,
+        fontSize: "22px",
+        lineHeight: "26px",
     },
     playerBio: {
-        maxWidth: "260px",
-        margin: "0 auto",
+        maxWidth: "250px",
         padding: "34px 0",
+        marginRight: "80px",
+        marginLeft: "30px",
+        [theme.breakpoints.down('sm')]: {
+            margin: "0 0",
+        },
     },
     moreSee:{
         background: "#BF0000",
@@ -103,4 +109,21 @@ export default makeStyles((theme) => ({
         paddingTop: "50px",
         paddingBottom: "30px",
     },
+    resultTable: {
+        padding: "34px 0",
+    },
+    tableHeader: {
+        fontWeight: 600,
+        fontSize: "24px",
+        lineHeight: "29px",
+    },
+    teamResult: {
+        marginTop: "20px",
+        paddingBottom: "20px",
+        borderBottom: ".2px solid rgba(0, 0, 0, 0.3)",
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-between",
+    }
 }))

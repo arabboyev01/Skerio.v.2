@@ -15,6 +15,20 @@ export default function Brands(){
                           </Box>
                         </span>
                     )}
+                    {data.map((item, index) =>
+                        <span key={index} className={classes.span}>
+                          <Box className={classes.orb}>
+                            <Image src={item.image} width={146} height={100} className={classes.brandName }/>
+                          </Box>
+                        </span>
+                    )}
+                    {data.map((item, index) =>
+                        <span key={index} className={classes.span}>
+                          <Box className={classes.orb}>
+                            <Image src={item.image} width={146} height={100} className={classes.brandName }/>
+                          </Box>
+                        </span>
+                    )}
                 </Box>
             </Box>
         </Box>

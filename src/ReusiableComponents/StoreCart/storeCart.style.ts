@@ -4,6 +4,7 @@ export default makeStyles((theme) => ({
     storeWrapper: {
         height: "auto",
         marginTop: "60px",
+        overflow: "hidden",
         [theme.breakpoints.down('sm')]: {
             marginTop: "50px",
         },
@@ -12,12 +13,14 @@ export default makeStyles((theme) => ({
         "--swiper-pagination-color": "#BF0000",
     },
     singleCart: {
-        width: "219px",
-        height: "400px",
+        width: "240px",
+        height: "auto",
         overflow: "none",
         marginRight: "4rem !important",
-        background: "#fff",
-        marginBottom: "20px",
+        marginBottom: "40px",
+        border: ".2px solid rgba(191, 0, 0, 0.3)",
+        marginLeft: "2px",
+        borderRadius: "10px",
         [theme.breakpoints.down('sm')]: {
             width: "250px !important",
             flexDirection: "column",
@@ -30,8 +33,7 @@ export default makeStyles((theme) => ({
         alignItems: "center",
         justifyContent: "space-between",
         borderRadius: "10px 10px 0 0",
-        background: "#333",
-        padding: "10px 3px",
+        padding: "10px",
     },
     likeTrue: {
         fontSize: "1.8rem",
@@ -60,7 +62,7 @@ export default makeStyles((theme) => ({
         height: "50px",
         background: "#BF0000",
         borderRadius: "0 0 10px 10px",
-        padding: "0 5px",
+        padding: "5px",
     },
     price: {
         fontSize: "1.1rem",

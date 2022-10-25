@@ -31,11 +31,30 @@ export default function Statistics(){
                         <Typography className={classes.teamDesc}>{data1.desc}</Typography>
                         <Button className={classes.moreSee}>See more</Button>
                     </Box>
+                    <Box className={classes.resultTable}>
+                        <Typography className={classes.tableHeader}>{data1.result}</Typography>
+                        <Box className={classes.teamResult}>
+                            <Typography>Team</Typography>
+                            <Typography>{data1.teamResult}</Typography>
+                        </Box>
+                        <Box className={classes.teamResult}>
+                            <Typography>Game Spent</Typography>
+                            <Typography>{data1.gameSpend}</Typography>
+                        </Box>
+                        <Box className={classes.teamResult}>
+                            <Typography>Hit Goals</Typography>
+                            <Typography>{data1.hitGoals}</Typography>
+                        </Box>
+                        <Box className={classes.teamResult}>
+                            <Typography>Sponsorship</Typography>
+                            <Typography>{data1.teamResult}</Typography>
+                        </Box>
+                    </Box>
                 </Box>
                 <Box className={classes.scrollView}>
                     {data.map(item =>
                         <Box onClick={() => handleSinglePlayer(item.cat)} className={item.cat === category ? classes.activePlayer : classes.scrollSingle}>
-                                <Image src={item.img} width={117} height={148} className={classes.scrollImage}/>
+                                <Image src={item.img} width={100} height={90} className={classes.scrollImage}/>
                             <Box>
                                 <Typography className={classes.playerName}>{item.name}</Typography>
                             </Box>

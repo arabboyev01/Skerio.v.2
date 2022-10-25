@@ -7,12 +7,12 @@ export default makeStyles((theme) => ({
     },
     homePageWrapper:{
         width: "100%",
-        height: "400px",
+        height: "300px",
         backgroundImage:`url(${BgImage.src})`,
         backgroundPosition: "center center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        borderRadius: "20px",
+        borderRadius: "10px",
         [theme.breakpoints.down('sm')]: {
             margin: "0 auto",
             borderRadius: "0",
@@ -21,8 +21,8 @@ export default makeStyles((theme) => ({
     },
     heading: {
         maxWidth: "612px",
-        fontSize: "64px",
-        lineHeight: "77px",
+        fontSize: "44px",
+        lineHeight: "47px",
         fontWeight: 900,
         color: "#fff",
         padding: "67px 0 0 30px",
@@ -34,9 +34,9 @@ export default makeStyles((theme) => ({
         },
     },
     paragraph: {
-        maxWidth: "466px",
-        fontSize: "18px",
-        lineHeight: "22px",
+        maxWidth: "566px",
+        fontSize: "16px",
+        lineHeight: "20px",
         fontWeight: 400,
         color: "#fff",
         margin: "15px 0 0 30px",

@@ -1,11 +1,19 @@
 import {makeStyles} from "@material-ui/core";
+import footerImage from "../../assets/footerImages/footer-bg.png";
+
 
 export default makeStyles((theme) => ({
     footerWrapper: {
-        background: `#000`,
+        backgroundImage: `url(${footerImage.src})`,
+        background: "rgba(0, 0, 0, 0.5)",
+        backgroundPosition: "center center",
+        backgroundSize: "cover",
+        width: "100%",
         height: "400px",
         borderRadius: "10px",
         color: "#fff",
+        position: "relative",
+        zIndex: 1,
         [theme.breakpoints.down('md')]: {
             height: "auto",
             borderRadius: "0",
@@ -27,15 +35,18 @@ export default makeStyles((theme) => ({
         fontSize: "28px",
         fontWeight: 700,
         lineHeight: "34px",
+        textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)"
     },
     footerDescription: {
         maxWidth: "367px",
+        textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)",
         [theme.breakpoints.down('md')]: {
             maxWidth: "307px",
         },
     },
     socialMediaBox: {
         padding: "50px 0 0 0",
+        textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)"
     },
     icon: {
         marginRight: "10px",
@@ -73,4 +84,13 @@ export default makeStyles((theme) => ({
     },
     contactIcons: {
     },
+    developmentText: {
+        color: "white",
+        fontSize: "18px",
+        lineHeight: "26px",
+        fontWeight: 500,
+        textAlign: "center",
+        alignItems: "center",
+        paddingTop: "15px",
+    }
 }))
