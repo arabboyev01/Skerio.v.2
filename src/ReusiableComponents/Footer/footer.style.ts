@@ -1,5 +1,5 @@
 import {makeStyles} from "@material-ui/core";
-import footerImage from "../../assets/footerImages/footer-bg.png";
+import footerImage from "../../assets/footerImages/skerio.footer.jpg";
 
 
 export default makeStyles((theme) => ({
@@ -13,10 +13,11 @@ export default makeStyles((theme) => ({
         borderRadius: "10px",
         color: "#fff",
         position: "relative",
-        zIndex: 1,
+        marginBottom: "20px",
         [theme.breakpoints.down('md')]: {
             height: "auto",
             borderRadius: "0",
+            marginBottom: "0",
         },
     },
     footerMain: {
@@ -31,15 +32,26 @@ export default makeStyles((theme) => ({
         },
     },
     footerHeader: {
+        position: "relative",
         color: 'white',
         fontSize: "28px",
         fontWeight: 700,
         lineHeight: "34px",
-        textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)"
+        textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)",
+        '&::after': {
+            content: "",
+            width: "50%",
+            height: "5px",
+            position: "absolute",
+            top: "0",
+            left: "0",
+            background: "#bf0000",
+        },
     },
     footerDescription: {
         maxWidth: "367px",
         textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)",
+        paddingTop: "20px",
         [theme.breakpoints.down('md')]: {
             maxWidth: "307px",
         },

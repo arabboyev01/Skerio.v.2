@@ -11,6 +11,9 @@ export default makeStyles((theme) => ({
     },
     swiper: {
         "--swiper-pagination-color": "#BF0000",
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "center",
     },
     singleCart: {
         width: "240px",

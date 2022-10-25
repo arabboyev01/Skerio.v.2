@@ -55,7 +55,7 @@ export default makeStyles((theme) => ({
         alignItems: "center",
         justifyContent: "space-between",
         padding: "10px",
-        borderBottom: ".2px solid rgba(0, 0, 0, 0.5)",
+        borderBottom: ".2px solid rgba(0, 0, 0, 0.2)",
         paddingBottom: "0",
         maxHeight: "110px",
     },
@@ -70,7 +70,8 @@ export default makeStyles((theme) => ({
         background: "#F4F4F4",
         color: "#BF0000",
         maxHeight: "110px",
-        borderBottom: ".2px solid rgba(0, 0, 0, 0.5)",
+        borderBottom: ".2px solid rgba(191, 0, 0, 0.5)",
+        borderLeft: ".2px solid rgba(191, 0, 0, 0.5)",
     },
     playerName:{
         maxWidth: "253px",

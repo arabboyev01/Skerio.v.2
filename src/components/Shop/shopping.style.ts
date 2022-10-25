@@ -8,14 +8,13 @@ export default makeStyles((theme) => ({
     shopSingleItem: {
         height: "400px",
         width: "100%",
+        overflow: "none",
+        borderRadius: "10px",
+        backgroundPosition: "center center",
+        backgroundSize: "cover",
         [theme.breakpoints.down("md")]:{
-            height: "600px",
+            height: "400px",
+            borderRadius: "0",
         }
     },
-    shopImage: {
-        height: "100%",
-        width: "100%",
-        objectFit: "cover",
-        borderRadius: "10px",
-    }
 }))
