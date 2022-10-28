@@ -14,21 +14,14 @@ export default function Grounds(){
         <Box className={classes.groundWrapper}>
             <Title header="Sports Grounds" />
             <Box className={classes.groundMain}>
-                <Swiper
-                    modules={[Autoplay, Keyboard, A11y]}
-                    slidesPerView={1}
-                    pagination={{ clickable: false }}
-                    scrollbar={{ draggable: true }}
+                <Swiper modules={[Autoplay, Keyboard, A11y]} slidesPerView={1} pagination={{ clickable: false }} scrollbar={{ draggable: true }}
                     keyboard={{
                         enabled: true,
-                    }}
-                    className={classes.swiper}
+                    }} className={classes.swiper}
                     autoplay={{
                         delay: 3500,
                         disableOnInteraction: true,
-                    }}
-                    centeredSlides={true}
-                >
+                    }} centeredSlides={true}>
                     {data.map(item =>
                         <SwiperSlide>
                             <Box className={classes.groundSingle} key={item.name}>

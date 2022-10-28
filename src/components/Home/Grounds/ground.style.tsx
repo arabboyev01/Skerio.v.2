@@ -5,7 +5,7 @@ export default makeStyles((theme) => ({
         paddingTop: "106px",
     },
     swiper: {
-        "--swiper-pagination-color": "#BF0000"
+        "--swiper-pagination-color": "#BF0000",
     },
     groundMain: {
       margin: "40px 0",

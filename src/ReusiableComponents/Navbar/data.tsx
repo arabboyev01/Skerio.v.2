@@ -10,7 +10,7 @@ export const data: navbarTypes[] = [
     },
     {
         name: "News",
-        link: "/shop",
+        link: "/news",
     },
     {
         name: "Table",
