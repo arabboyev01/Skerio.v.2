@@ -27,7 +27,7 @@ export default makeStyles((theme) => ({
         display: "flex",
         flexDirection: "row",
         height: "470px",
-        maxWidth: "800px",
+        maxWidth: "870px",
         border: "0.3px solid rgba(0, 0, 0, 0.3)",
         borderRadius: "10px ",
         [theme.breakpoints.down('sm')]: {
@@ -85,16 +85,16 @@ export default makeStyles((theme) => ({
         gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
     },
     ordinaryNewsSingle: {
-        width: "330px",
-        height: "380px",
+        width: "420px",
+        height: "auto",
         paddingTop: "20px",
         [theme.breakpoints.down('sm')]: {
-            maWwidth: "300px",
+            maxWidth: "330px",
         },
     },
     ordinaryImages: {
         width:"100%",
-        height: "270px",
+        height: "250px",
         backgroundSize: "contain",
         backgroundPosition: "center center",
         backgroundRepeat: "no-repeat",
@@ -102,6 +102,7 @@ export default makeStyles((theme) => ({
         borderTopRightRadius: "10px",
     },
     ordinaryDesc: {
-        height: "210px",
+        height: "auto",
+        marginTop: "20px",
     },
 }))

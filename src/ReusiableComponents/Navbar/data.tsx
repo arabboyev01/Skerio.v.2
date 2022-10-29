@@ -14,7 +14,7 @@ export const data: navbarTypes[] = [
     },
     {
         name: "Table",
-        link: "/shop",
+        link: "/table",
     },
     {
         name: "Area",
