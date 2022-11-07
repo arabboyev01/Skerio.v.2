@@ -1,10 +1,11 @@
 import { Box, Typography } from "@material-ui/core";
 import FilterButtons from "../../ReusiableComponents/FilterButtons/FilterButtons";
 import useStyles from "./news.style";
-import {dumbNewsData} from "./newsDumbData";
+import {dumbNewsData, newsCarousel} from "./newsDumbData";
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import Image from "next/image";
 import Secondary from "./Secondary";
+import CarouselComponent from "../../ReusiableComponents/Carousel/Carousel";
 
 export default function News() {
 
@@ -12,11 +13,12 @@ export default function News() {
     return (
         <Box className={classes.newsWrapper}>
             <Box>
+                <CarouselComponent data={newsCarousel} />
                 <FilterButtons />
             </Box>
             <Box className={classes.newsContainer}>
                 <Box className={classes.specialNews}>
-                    {dumbNewsData.filter(categ => categ.category === 2).map(item => 
+                    {dumbNewsData.filter(categ => categ.category === 2).map(item =>
                     <Box className={classes.singleSpecial}>
                         <Box className={classes.imageBackground} style={{backgroundImage:`url(${item.image.src})`}}></Box>
                         <Box className={classes.specialNewsDesc}>
@@ -24,10 +26,10 @@ export default function News() {
                             <Typography className={classes.newsTitle}>{item.title}</Typography>
                             <Typography className={classes.newsDesk}>{item.desc}</Typography>
                         </Box>
-                    </Box>  
+                    </Box>
                     )}
                     <Box className={classes.ordinaryNews}>
-                        {dumbNewsData.filter(categ => categ.category === 1).map(item =>     
+                        {dumbNewsData.filter(categ => categ.category === 1).map(item =>
                         <Box className={classes.ordinaryNewsSingle}>
                             <Image className={classes.ordinaryImages} src={item.image}/>
                             <Box className={classes.ordinaryDesc}>

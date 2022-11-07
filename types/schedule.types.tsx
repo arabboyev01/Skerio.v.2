@@ -40,3 +40,13 @@ export interface groundTypes {
     image: any,
     adress: string,
 }
+export interface tableDataTypes {
+    icon: any,
+    name: string,
+    score: number,
+    conced: number,
+    shotsOn: number,
+    fouls: number,
+    yellow: number,
+    red: number,
+}

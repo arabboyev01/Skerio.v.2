@@ -4,4 +4,10 @@ export default makeStyles((theme) => ({
     TableWrapper: {
 
     },
+    tableMainWrapper: {
+
+    },
+    tableHeader: {
+
+    },
 }))

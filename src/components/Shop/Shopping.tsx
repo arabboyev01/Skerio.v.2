@@ -7,17 +7,16 @@ import StoreCart from "../../ReusiableComponents/StoreCart/StoreCart";
 import {data} from "../Home/Store/data";
 import Title from "../../ReusiableComponents/Titel/Titel";
 import FilterButtons from "../../ReusiableComponents/FilterButtons/FilterButtons";
+import CarouselComponent from "../../ReusiableComponents/Carousel/Carousel";
 
 export default function Shopping(){
     const classes = useStyles();
 
     return(
         <Box className={classes.mainShopWrapper}>
-              <Carousel>
-                  {dataDump.map((item: any, index:number) =>
-                      <Box className={classes.shopSingleItem} key={index} style={{backgroundImage: `url(${item.images.src})`}}></Box>
-                  )}
-              </Carousel>
+              <Box>
+                  <CarouselComponent data={dataDump}/>
+              </Box>
             <FilterButtons />
               <Box>
                 <Title header="T-shirts" />

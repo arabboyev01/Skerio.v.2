@@ -19,7 +19,9 @@ import image19 from "../../assets/news_images/news_img19.png"
 import image20 from "../../assets/news_images/news_img20.png"
 import image21 from "../../assets/news_images/news_img21.png"
 import image22 from "../../assets/news_images/news_img22.png"
-
+import carousel1 from "../../assets/news_images/carousel-news1.jpg"
+import carousel2 from "../../assets/news_images/carousel-news2.jpg"
+import carousel3 from "../../assets/news_images/carousel-news3.jpg"
 export const dumbNewsData = [
     {
         image: image1,
@@ -148,4 +150,15 @@ export const dumbNewsData = [
         category: 3,
     },
 
+];
+export const newsCarousel = [
+    {
+        images: carousel1,
+    },
+    {
+        images: carousel2,
+    },
+    {
+        images: carousel3,
+    },
 ]

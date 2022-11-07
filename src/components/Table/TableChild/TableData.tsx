@@ -1,0 +1,223 @@
+import {tableDataTypes} from "../../../../types/schedule.types";
+import realIcons from "../../../assets/table-icons/real-icon.png";
+import barcelonaIcons from "../../../assets/table-icons/barcelona-icon.png";
+import atletikoIcons from "../../../assets/table-icons/atletico-icon.png";
+import betisIcons from "../../../assets/table-icons/betis-icon.png";
+import villaIcons from "../../../assets/table-icons/villa-icon.png";
+import sevillaIcons from "../../../assets/table-icons/sevilla-icon.png";
+import valenciaIcons from "../../../assets/table-icons/valensia-icon.png";
+import granadaIcons from "../../../assets/table-icons/granda-icon.png";
+import atlitikIcons from "../../../assets/table-icons/atletik-icon.png";
+import celtaIcons from "../../../assets/table-icons/celta-icon.png";
+import espanyolIcons from "../../../assets/table-icons/espanyol-icon.png";
+import vallecanoIcons from "../../../assets/table-icons/rayo-icon.png";
+import socidedIcons from "../../../assets/table-icons/sosidat-icon.png";
+import elcheIcons from "../../../assets/table-icons/elche-icon.png";
+import osasunaIcons from "../../../assets/table-icons/osasuna-icon.png";
+import mallorcaIcons from "../../../assets/table-icons/mallorca-icon.png";
+import cadizIcons from "../../../assets/table-icons/cadis-icon.png";
+import getafeIcons from "../../../assets/table-icons/geta-icon.png";
+import deportivo from "../../../assets/table-icons/departivo-icon.png";
+import levante from "../../../assets/table-icons/levante-icon.png";
+export const tableData: tableDataTypes[] = [
+    {
+        icon:realIcons,
+        name: "Real Madrid",
+        score: 80,
+        conced: 31,
+        shotsOn: 256,
+        fouls: 394,
+        yellow: 36,
+        red: 0,
+    },
+    {
+        icon:barcelonaIcons,
+        name: "Barcelona",
+        score: 80,
+        conced: 31,
+        shotsOn: 256,
+        fouls: 394,
+        yellow: 36,
+        red: 0,
+    },
+    {
+        icon:atletikoIcons,
+        name: "ATLÉTICO DE MADRID",
+        score: 80,
+        conced: 31,
+        shotsOn: 256,
+        fouls: 394,
+        yellow: 36,
+        red: 0,
+    },
+    {
+        icon:betisIcons,
+        name: "Real Betis",
+        score: 80,
+        conced: 31,
+        shotsOn: 256,
+        fouls: 394,
+        yellow: 36,
+        red: 0,
+    },
+    {
+        icon:villaIcons,
+        name: "Villarreal FC",
+        score: 80,
+        conced: 31,
+        shotsOn: 256,
+        fouls: 394,
+        yellow: 36,
+        red: 0,
+    },
+    {
+        icon:sevillaIcons,
+        name: "Sevilla FC",
+        score: 80,
+        conced: 31,
+        shotsOn: 256,
+        fouls: 394,
+        yellow: 36,
+        red: 0,
+    },
+    {
+        icon:levante,
+        name: "Levante UD",
+        score: 80,
+        conced: 31,
+        shotsOn: 256,
+        fouls: 394,
+        yellow: 36,
+        red: 0,
+    },
+    {
+        icon:valenciaIcons,
+        name: "Valencia CF",
+        score: 80,
+        conced: 31,
+        shotsOn: 256,
+        fouls: 394,
+        yellow: 36,
+        red: 0,
+    },
+    {
+        icon:deportivo,
+        name: "DEPORTIVO ALAVÉS",
+        score: 80,
+        conced: 31,
+        shotsOn: 256,
+        fouls: 394,
+        yellow: 36,
+        red: 0,
+    },
+    {
+        icon:granadaIcons,
+        name: "Granada CF",
+        score: 80,
+        conced: 31,
+        shotsOn: 256,
+        fouls: 394,
+        yellow: 36,
+        red: 0,
+    },
+    {
+        icon:atlitikIcons,
+        name: "ATHLETIC CLUB",
+        score: 80,
+        conced: 31,
+        shotsOn: 256,
+        fouls: 394,
+        yellow: 36,
+        red: 0,
+    },
+    {
+        icon:celtaIcons,
+        name: "RC CELTA",
+        score: 80,
+        conced: 31,
+        shotsOn: 256,
+        fouls: 394,
+        yellow: 36,
+        red: 0,
+    },
+    {
+        icon:espanyolIcons,
+        name: "RCD ESPANYOL",
+        score: 80,
+        conced: 31,
+        shotsOn: 256,
+        fouls: 394,
+        yellow: 36,
+        red: 0,
+    },
+    {
+        icon:vallecanoIcons,
+        name: "RAYO VALLECANO",
+        score: 80,
+        conced: 31,
+        shotsOn: 256,
+        fouls: 394,
+        yellow: 36,
+        red: 0,
+    },
+    {
+        icon:socidedIcons,
+        name: "REAL SOCIEDAD",
+        score: 80,
+        conced: 31,
+        shotsOn: 256,
+        fouls: 394,
+        yellow: 36,
+        red: 0,
+    },
+    {
+        icon:elcheIcons,
+        name: "ELCHE CF",
+        score: 80,
+        conced: 31,
+        shotsOn: 256,
+        fouls: 394,
+        yellow: 36,
+        red: 0,
+    },
+    {
+        icon:osasunaIcons,
+        name: "CA OSASUNA",
+        score: 80,
+        conced: 31,
+        shotsOn: 256,
+        fouls: 394,
+        yellow: 36,
+        red: 0,
+    },
+    {
+        icon:mallorcaIcons,
+        name: "RCD MALLORCA",
+        score: 80,
+        conced: 31,
+        shotsOn: 256,
+        fouls: 394,
+        yellow: 36,
+        red: 0,
+    },
+    {
+        icon:cadizIcons,
+        name: "CÁDIZ CF",
+        score: 80,
+        conced: 31,
+        shotsOn: 256,
+        fouls: 394,
+        yellow: 36,
+        red: 0,
+    },
+    {
+        icon:getafeIcons,
+        name: "GETAFE CF",
+        score: 80,
+        conced: 31,
+        shotsOn: 256,
+        fouls: 394,
+        yellow: 36,
+        red: 0,
+    },
+]
