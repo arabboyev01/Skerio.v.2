@@ -27,7 +27,7 @@ export const data: navbarTypes[] = [
     {
         id: '4',
         name: "Area",
-        link: "/shop",
+        link: "/areas",
         category: '4',
     },
 ]

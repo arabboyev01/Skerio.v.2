@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import {Box} from "@material-ui/core"
 import Layout from "../src/Layouts/Layouts";
 import HomePage from "../src/components/Home/HomePage";
