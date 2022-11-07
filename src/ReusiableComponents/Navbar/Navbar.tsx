@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useState, useEffect} from "react";
 import { Box } from "@material-ui/core";
 import useStyles from "./Navbar.styles";
 import {Typography, Button} from "@mui/material";
@@ -7,22 +7,18 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import {NativeSelect, FormControl } from '@mui/material';
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Navbar(){
 
+    const router = useRouter();
     const classes = useStyles();
     const [openNavbar, setOpenNavbar] = useState(false);
-    const [categ, setCateg] = useState(0);
 
     const handleOpenMenu = () => {
         setOpenNavbar(!openNavbar);
     }
 
-    const handleFilterCateg = function(buttonId: any){
-        setCateg(buttonId);
-        localStorage.setItem("navId", buttonId );
-    }
-    const navId = localStorage.getItem("navId");
 
     return(
         <Box className={classes.navbarWrapper}>
@@ -30,7 +26,7 @@ export default function Navbar(){
             <Box className={!openNavbar ? classes.mainBlock : classes.activeNavbar}>
                 {data.map(item =>
                     <Link href={item.link}>
-                     <Typography className={navId == item.category ? classes.singleActiveName : classes.singleName} onClick={() => handleFilterCateg(item.id)} key={item.name}>{item.name}</Typography>
+                     <Typography  className={router.pathname == item.link ? classes.singleActiveName : classes.singleName} key={item.name}>{item.name}</Typography>
                     </Link>
                 )}
                 <Box className={classes.dropDown}>

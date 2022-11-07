@@ -1,5 +1,7 @@
 
 export interface navbarTypes {
+    id: string;
+    category: string;
     name: string,
     link: string,
 }
