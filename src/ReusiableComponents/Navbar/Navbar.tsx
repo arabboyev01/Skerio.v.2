@@ -11,19 +11,26 @@ import Link from "next/link";
 export default function Navbar(){
 
     const classes = useStyles();
-
     const [openNavbar, setOpenNavbar] = useState(false);
+    const [categ, setCateg] = useState(0);
+
     const handleOpenMenu = () => {
         setOpenNavbar(!openNavbar);
     }
 
+    const handleFilterCateg = function(buttonId: any){
+        setCateg(buttonId);
+        localStorage.setItem("navId", buttonId );
+    }
+    const navId = localStorage.getItem("navId");
+
     return(
         <Box className={classes.navbarWrapper}>
-            <Typography className={classes.logo}> Skerio.</Typography>
+            <Typography className={classes.logo}> Skerio. </Typography>
             <Box className={!openNavbar ? classes.mainBlock : classes.activeNavbar}>
                 {data.map(item =>
                     <Link href={item.link}>
-                     <Typography className={classes.singleName} key={item.name}>{item.name}</Typography>
+                     <Typography className={navId == item.category ? classes.singleActiveName : classes.singleName} onClick={() => handleFilterCateg(item.id)} key={item.name}>{item.name}</Typography>
                     </Link>
                 )}
                 <Box className={classes.dropDown}>

@@ -61,6 +61,20 @@ export default makeStyles((theme) => ({
             paddingLeft: "50px",
         },
     },
+    singleActiveName: {
+        fontWeight: 400,
+        fontSize: "18px",
+        lineHeight: "22px",
+        paddingRight: "30px",
+        cursor: "pointer",
+        color: "#bf0000",
+        [theme.breakpoints.down('sm')]: {
+            paddingRight: "0",
+            paddingTop: "30px",
+            color: "#fff",
+            paddingLeft: "50px",
+        },
+    },
     hamburgerMenu: {
         display: "none",
         zIndex: 1000,
