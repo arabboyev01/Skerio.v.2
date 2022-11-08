@@ -16,10 +16,10 @@ export default function TableChild(){
             <Table sx={{ minWidth: 700 }} aria-label="customized table">
                 <TableHead>
                     <TableRow>
-                        <StyledTableCell>Team</StyledTableCell>
-                        <StyledTableCell align="right">Number</StyledTableCell>
-                        <StyledTableCell align="right">Goal Scored</StyledTableCell>
+                        <StyledTableCell>Number</StyledTableCell>
+                        <StyledTableCell align="right">Team</StyledTableCell>
                         <StyledTableCell align="right">Icon</StyledTableCell>
+                        <StyledTableCell align="right">Goal Scored</StyledTableCell>
                         <StyledTableCell align="right">Goal Concadet</StyledTableCell>
                         <StyledTableCell align="right">Shots on Target</StyledTableCell>
                         <StyledTableCell align="right">Fouls</StyledTableCell>
