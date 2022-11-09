@@ -48,7 +48,7 @@ export default function Navbar(){
                     </FormControl>
                 </Box>
                 <Box className={classes.loginPage}>
-                    <Link href="/">
+                    <Link href="/login">
                     <Button className={classes.loginBtn} variant="contained">Login</Button>
                     </Link>
                 </Box>
