@@ -24,7 +24,7 @@ export default function Statistics(){
             <Title header="Statistics" />
             <Box className={classes.statisticMain}>
                 <Box className={classes.singleInform}>
-                    <Image src={data1.img} className={classes.playerImage} width={300} height={400}/>
+                    <Image src={data1.img} className={classes.playerImage} alt="image" width={300} height={400}/>
                     <Box className={classes.playerBio}>
                         <Typography className={classes.playerName}>{data1.name}</Typography>
                         <Typography className={classes.teamName}>{data1.team}</Typography>
@@ -53,8 +53,8 @@ export default function Statistics(){
                 </Box>
                 <Box className={classes.scrollView}>
                     {data.map(item =>
-                        <Box onClick={() => handleSinglePlayer(item.cat)} className={item.cat === category ? classes.activePlayer : classes.scrollSingle}>
-                                <Image src={item.img} width={100} height={90} className={classes.scrollImage}/>
+                        <Box onClick={() => handleSinglePlayer(item.cat)} key={item.name} className={item.cat === category ? classes.activePlayer : classes.scrollSingle}>
+                                <Image src={item.img} width={100} height={90} alt="image" className={classes.scrollImage}/>
                             <Box>
                                 <Typography className={classes.playerName}>{item.name}</Typography>
                             </Box>

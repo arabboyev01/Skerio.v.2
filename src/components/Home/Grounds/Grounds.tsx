@@ -23,15 +23,15 @@ export default function Grounds(){
                         disableOnInteraction: true,
                     }} centeredSlides={true}>
                     {data.map(item =>
-                        <SwiperSlide>
-                            <Box className={classes.groundSingle} key={item.name}>
+                        <SwiperSlide key={item.name}>
+                            <Box className={classes.groundSingle} >
                                 <Box className={classes.singleDesc}>
                                     <Typography className={classes.groundName}>{item.name}</Typography>
                                     <Typography className={classes.groundAdress}>{item.adress}</Typography>
                                     <Button className={classes.moreSee}>See more</Button>
                                 </Box>
                                 <Box className={classes.singleImage}>
-                                    <Image src={item.image} />
+                                    <Image src={item.image} alt="image" />
                                 </Box>
                             </Box>
                         </SwiperSlide>

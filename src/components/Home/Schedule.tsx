@@ -44,8 +44,8 @@ export default function Schedule(){
                 <SwiperSlide className={classes.singleMatch} key={item.name1}>
                     <Box className={classes.matchHeader}>
                         <Box>
-                            <Image className={classes.firstImage} src={item.firstClubLogo}  width={80} height={80}/>
-                            <Image className={classes.secondImage} src={item.secondClubLogo}  width={80} height={80}/>
+                            <Image className={classes.firstImage} src={item.firstClubLogo} alt="image" width={80} height={80}/>
+                            <Image className={classes.secondImage} src={item.secondClubLogo} alt="image" width={80} height={80}/>
                         </Box>
                         <Box className={classes.times}>
                             <Typography>{item.date}</Typography>

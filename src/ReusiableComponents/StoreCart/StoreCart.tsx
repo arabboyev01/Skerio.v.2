@@ -15,7 +15,7 @@ export default function StoreCart({data} : any){
     const [like, setLike] = useState(false);
 
     const handleChangeLikeIcon = function() {
-        setLike(!like ? true : false)
+        setLike(!like)
     }
 
     return(
@@ -52,13 +52,13 @@ export default function StoreCart({data} : any){
                     <SwiperSlide key={item.name}>
                         <Box className={classes.singleCart}>
                         <Box className={classes.cartHeader}>
-                            <Image src={item.Icon}  width={32} height={32}/>
+                            <Image src={item.Icon}  width={32} height={32} alt="image"/>
                             <Box>
                                 {like ? <FavoriteIcon onClick={handleChangeLikeIcon} className={classes.likeTrue}/> : <FavoriteBorderIcon onClick={handleChangeLikeIcon} className={classes.likeFalse}/>}
                             </Box>
                         </Box>
                         <Box className={classes.bodyImage}>
-                            <Image src={item.image}  width={204} height={255} className={classes.cartImage}/>
+                            <Image src={item.image}  width={204} height={255} alt="image" className={classes.cartImage}/>
                         </Box>
                         <Box className={classes.cartFooter}>
                             <Box>

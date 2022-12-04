@@ -11,21 +11,21 @@ export default function Brands(){
                     {data.map((item, index) =>
                         <span key={index} className={classes.span}>
                           <Box className={classes.orb}>
-                            <Image src={item.image} width={146} height={100} className={classes.brandName }/>
+                            <Image src={item.image} width={146} height={100} alt="image" className={classes.brandName }/>
                           </Box>
                         </span>
                     )}
                     {data.map((item, index) =>
                         <span key={index} className={classes.span}>
                           <Box className={classes.orb}>
-                            <Image src={item.image} width={146} height={100} className={classes.brandName }/>
+                            <Image src={item.image} width={146} height={100} alt="image" className={classes.brandName }/>
                           </Box>
                         </span>
                     )}
                     {data.map((item, index) =>
                         <span key={index} className={classes.span}>
                           <Box className={classes.orb}>
-                            <Image src={item.image} width={146} height={100} className={classes.brandName }/>
+                            <Image src={item.image} width={146} height={100} alt="image" className={classes.brandName }/>
                           </Box>
                         </span>
                     )}

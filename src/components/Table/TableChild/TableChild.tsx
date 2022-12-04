@@ -32,7 +32,7 @@ export default function TableChild(){
                         <StyledTableRow key={row.name}>
                             <StyledTableCell component="th" scope="row">{index + 1}</StyledTableCell>
                             <StyledTableCell component="th" scope="row">{row.name}</StyledTableCell>
-                            <StyledTableCell align="right"><Image src={row.icon} className={classes.tableImage}/></StyledTableCell>
+                            <StyledTableCell align="right"><Image src={row.icon} alt="image" className={classes.tableImage}/></StyledTableCell>
                             <StyledTableCell align="right">{row.score}</StyledTableCell>
                             <StyledTableCell align="right">{row.conced}</StyledTableCell>
                             <StyledTableCell align="right">{row.shotsOn}</StyledTableCell>

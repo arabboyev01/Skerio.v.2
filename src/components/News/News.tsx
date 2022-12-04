@@ -19,7 +19,7 @@ export default function News() {
             <Box className={classes.newsContainer}>
                 <Box className={classes.specialNews}>
                     {dumbNewsData.filter(categ => categ.category === 2).map(item =>
-                    <Box className={classes.singleSpecial}>
+                    <Box className={classes.singleSpecial} key={item.title}>
                         <Box className={classes.imageBackground} style={{backgroundImage:`url(${item.image.src})`}}></Box>
                         <Box className={classes.specialNewsDesc}>
                             <Typography className={classes.dates}><CalendarTodayIcon /> {item.date}</Typography>
@@ -28,10 +28,10 @@ export default function News() {
                         </Box>
                     </Box>
                     )}
-                    <Box className={classes.ordinaryNews}>
+                    <Box className={classes.ordinaryNews} >
                         {dumbNewsData.filter(categ => categ.category === 1).map(item =>
-                        <Box className={classes.ordinaryNewsSingle}>
-                            <Image className={classes.ordinaryImages} src={item.image}/>
+                        <Box className={classes.ordinaryNewsSingle} key={item.title}>
+                            <Image alt="image" className={classes.ordinaryImages} src={item.image}/>
                             <Box className={classes.ordinaryDesc}>
                             <Typography ><CalendarTodayIcon /> {item.date}</Typography>
                             <Typography >{item.title}</Typography>

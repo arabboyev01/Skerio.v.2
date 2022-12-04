@@ -1,4 +1,4 @@
-import {useState, useEffect} from "react";
+import {useState} from "react";
 import { Box } from "@material-ui/core";
 import useStyles from "./Navbar.styles";
 import {Typography, Button} from "@mui/material";
@@ -25,8 +25,8 @@ export default function Navbar(){
             <Typography className={classes.logo}> Skerio. </Typography>
             <Box className={!openNavbar ? classes.mainBlock : classes.activeNavbar}>
                 {data.map(item =>
-                    <Link href={item.link}>
-                     <Typography  className={router.pathname == item.link ? classes.singleActiveName : classes.singleName} key={item.name}>{item.name}</Typography>
+                    <Link href={item.link} key={item.name}>
+                     <Typography  className={router.pathname == item.link ? classes.singleActiveName : classes.singleName}>{item.name}</Typography>
                     </Link>
                 )}
                 <Box className={classes.dropDown}>
